@@ -1,0 +1,21 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="Clock.css" />
+    <script src="Clock.js"></script>
+    <style>
+        #canvas {
+            display: block;
+            width: 10em;
+            height: 10em;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas"></div>
+</body>
+<script>
+    let clock = new Clock(document.getElementById('canvas'));
+    clock.start();
+</script>
+</html>
